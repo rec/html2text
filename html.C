@@ -588,8 +588,7 @@ get_attribute(
 
         va_list va;
         va_start(va, v1);
-	
-        for (int count = 0; count < 4; ++count) {
+        for (;;) {
           if (cmp_nocase(s, (*i).second) == 0) break;
           s = va_arg(va, const char *);
           if (!s) { v = dflt; break; }

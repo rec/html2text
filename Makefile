@@ -50,7 +50,7 @@ LIBSTDCXX_LIBS      =
 AUTO_PTR_BROKEN     = -DAUTO_PTR_BROKEN
 MAKEDEPEND_INCLUDES = -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/5.1/include -I/usr/include -I/usr/include/_types -I/usr/include/i386 -I/usr/include/libkern -I/usr/include/libkern/i386 -I/usr/include/mach/i386 -I/usr/include/machine -I/usr/include/sys -I/usr/include/sys/_types -I/usr/include/xlocale 
 
-DEBUG=-O0 -g
+DEBUG=-O2 -g
 
 INCLUDES  = $(LIBSTDCXX_INCLUDES)
 DEFINES   = -DVERSION=$(VERSION) $(SYS_POLL_MISSING) $(BOOL_DEFINITION) $(EXPLICIT) $(AUTO_PTR_BROKEN)
@@ -139,3 +139,4 @@ local-depend : HTMLParser.h
 
 include Dependencies
 
+e
